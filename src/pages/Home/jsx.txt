@@ -1,0 +1,101 @@
+import './Events.css'
+import VerticalMarquee from "../../components/VerticalMarquee/VerticalMarquee.jsx";
+import {useEffect, useState} from "react";
+import {useGSAP} from "@gsap/react";
+import gsap from "gsap";
+
+function Events() {
+  const [eventNo, setEventNo] = useState(0);
+
+  const tl = gsap.timeline()
+
+  function handleNextEvent() {
+    if (eventNo === 2) return
+    setEventNo(eventNo + 1)
+
+  }
+
+  function handlePrevEvent() {
+    if (eventNo === 0) return
+    setEventNo(eventNo - 1)
+
+
+  }
+
+  useGSAP(() => {
+    console.log(eventNo)
+    tl.to('.event-title-inner', {
+      transform: `translateX(-${eventNo * 100}%)`,
+      ease: "power3.inOut",
+      duration: 0.4,
+    }, )
+    tl.to('.event-description-inner', {
+      transform: `translateX(-${eventNo * 100}%)`,
+      ease: "power3.inOut",
+      duration: 0.4,
+    }, '<')
+    tl.to('.counter-inner', {
+      transform: `translateY(-${eventNo * 100}%)`,
+      ease: "power3.inOut",
+      duration: 0.4,
+    }, '<')
+    tl.to('.img-cont', {
+      transform: `translateX(-${eventNo * 100}%)`,
+      ease: "power3.inOut",
+      duration: 0.4,
+    }, '<')
+
+  }, [eventNo]);
+
+
+
+  return (
+    <>
+      <VerticalMarquee textColor={"#000000"} bgColor={"#ffffff"}/>
+      <div className="events">
+        <div className="events-inner events-pronites">
+          <div className="events-desc">
+            <div className="events-title">Pronites</div>
+            <div className="events-about">
+
+            </div>
+          </div>
+          <div className="image-cont">
+            <div className="img"></div>
+            <div className="img"></div>
+            <div className="img"></div>
+          </div>
+        </div>
+        <div className="events-inner events-informals">
+          <div className="events-desc">
+            <div className="events-title">Pronites</div>
+            <div className="events-about">
+
+            </div>
+          </div>
+          <div className="image-cont">
+            <div className="img"></div>
+            <div className="img"></div>
+            <div className="img"></div>
+          </div>
+        </div>
+        <div className="events-inner events-workshops">
+          <div className="events-desc">
+            <div className="events-title">Pronites</div>
+            <div className="events-about">
+
+            </div>
+          </div>
+          <div className="image-cont">
+            <div className="img"></div>
+            <div className="img"></div>
+            <div className="img"></div>
+          </div>
+        </div>
+
+      </div>
+    </>
+  )
+}
+
+export default Events;

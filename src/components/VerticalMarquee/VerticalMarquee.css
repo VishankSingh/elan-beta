@@ -1,0 +1,41 @@
+.marquee-container {
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+    width: 8vw;
+    pointer-events: none;
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.marquee span {
+
+    font-weight: 500;
+    font-size: 4.8vw;
+    line-height: 1;
+    writing-mode: vertical-rl;
+    transform: rotate(0deg) translateY(-1500vh);
+}
+
+.marquee .marquee-text {
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.marquee .marquee-star {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    .marquee-container {
+        display: none;
+    }
+}
+

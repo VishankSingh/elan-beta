@@ -1,0 +1,123 @@
+.footer {
+    position: relative;
+    width: 92vw;
+    height: auto;
+    padding: 10vh 2vw 6vh 2vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 300;
+}
+
+.upper-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 8vh;
+}
+
+.heading {
+    font-size: 1vw;
+}
+
+.mail {
+    font-size: 4vw;
+    border-bottom: 0.01vh solid ;
+    width: fit-content;
+}
+
+.middle-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-poc {
+    display: flex;
+    flex-direction: column;
+}
+
+.poc {
+    display: flex;
+}
+
+.poc-inner {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.poc-name {
+    font-weight: 400;
+}
+
+.poc-1 {
+    margin-right: 3vw;
+}
+
+.poc-heading,
+.socials-heading {
+    margin-bottom: 1vw;
+}
+
+.contact-socials {
+    text-align: right;
+}
+
+.social-link {
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+{/*
+TODO: Adjust for mobile devices
+*/}
+@media screen and (max-width: 992px) {
+    .footer {
+        width: 100vw;
+        padding: 5vh 4vh 5vh 4vh;
+    }
+    .upper-footer {
+        padding-bottom: 5vh;
+    }
+    .heading {
+        font-size: 2vw;
+    }
+    .mail {
+        font-size: 4vw;
+    }
+    .contact-poc {
+        display: flex;
+        flex-direction: column;
+    }
+    .poc {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .poc-inner {
+        flex-direction: column;
+        font-size: 2.5vw;
+    }
+    .poc-heading,
+    .socials-heading {
+        margin-bottom: 2vh;
+    }
+    .social-link {
+        font-weight: 300;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+

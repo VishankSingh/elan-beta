@@ -1,0 +1,81 @@
+import {useEffect} from "react";
+import './VerticalMarquee.css'
+
+function VerticalMarquee({textColor, bgColor}) {
+
+  useEffect(() => {
+    const marqueeContainer = document.getElementById('marquee-container');
+    const marqueeText = document.getElementById('marquee');
+    marqueeContainer.style.backgroundColor = bgColor;
+    marqueeText.style.color = textColor;
+
+  }, [])
+
+  useEffect(() => {
+    function move() {
+      const marquee = document.querySelector('.marquee');
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      marquee.style.transform = `translateY(${scrollTop * 0.5}px)`;
+    }
+
+    window.addEventListener('scroll', move);
+
+    return () => {window.removeEventListener('scroll', move)};
+  }, []);
+
+  return (
+    <>
+      <div className="marquee-container" id="marquee-container">
+        <div className="marquee" id="marquee">
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+          <span className="marquee-text">Elan & nVision</span>
+          <span className="marquee-star">&#10022;</span>
+
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default VerticalMarquee;

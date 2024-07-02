@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    cursor: none;
+    outline: red 0px solid;
+}
+
+::selection {
+    color: #ffffff;
+    background: #353535;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #353535;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html.lenis,
+html.lenis body {
+    height: 100%;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+#root {
+    height: auto;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+
+}
+
+.link-red:hover {
+    color: red;
+}
+
+.link-green:hover {
+    color: green;
+}
+
+.link-yellow:hover {
+    color: #ffcc00;
+}
+
+.link-orange:hover {
+    color: orange;
+}
+
+.link-purple:hover {
+    color: mediumpurple;
+}
+
+.underline-white {
+    border-bottom: white solid 1px;
+}
+
+@media screen and (max-width: 992px) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .desktop-hide {
+        display: none;
+    }
+}

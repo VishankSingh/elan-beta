@@ -1,0 +1,32 @@
+.cursor {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    z-index: 9999;
+    height: 0.35vw;
+    width: 0.35vw;
+    border-radius: 50%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    mix-blend-mode: exclusion;
+
+}
+
+.cursor-text {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    mix-blend-mode: exclusion;
+    display: flex;
+    line-height: normal;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .cursor {
+    }
+}

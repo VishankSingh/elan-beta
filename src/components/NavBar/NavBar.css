@@ -1,0 +1,149 @@
+.nav-cont {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: white;
+}
+
+
+.nav-top {
+    position: fixed;
+    width: 92vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 40;
+    padding: 2vh 2vw;
+    height: 10vh;
+}
+
+.logo {
+    height: 5.8vh;
+    width: 5.8vh;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 7vw;
+    align-items: center;
+
+}
+
+.nav-links__span {
+    font-weight: 400;
+    font-size: 0.9vw;
+}
+
+.menu-open {
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu-close {
+    position: fixed;
+    right: 10vw;
+    opacity: 0;
+    color: white;
+    mix-blend-mode: exclusion;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.menu-link {
+    position: relative;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+    height: 8vh;
+    overflow: hidden;
+}
+
+.menu-link-inner {
+    color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .nav-top {
+        width: 100vw;
+        padding: 1vh 5vw;
+        font-weight: 300;
+    }
+
+    .menu-close {
+        right: 5vw;
+        font-size: 2vh;
+        height: 10vh;
+    }
+
+
+
+
+    .logo {
+        height: 5.8vh;
+        width: 5.8vh;
+    }
+
+    .logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .nav-links__span {
+        font-weight: 400;
+        font-size: 2vh;
+    }
+
+    .menu-open {
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0;
+        z-index: -1;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .menu-link {
+        position: relative;
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: 3vw;
+        font-weight: 300;
+        height: 8vh;
+        overflow: hidden;
+    }
+
+    .menu-link-inner {
+        color: #ffffff;
+    }
+
+}

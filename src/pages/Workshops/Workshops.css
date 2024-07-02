@@ -1,0 +1,33 @@
+
+
+.workshops {
+    width: 92vw;
+    height: 200vh;
+    background: #000000;
+    color: white;
+    padding: 15vh 2vw 12vh 2vw;
+
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.title {
+    font-size: 4vw;
+    color: #717171;
+    font-weight: 300;
+}
+
+.workshop-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1vw;
+}
+

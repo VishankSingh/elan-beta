@@ -1,0 +1,113 @@
+.accommodation {
+    position: relative;
+    width: 92vw;
+    height: 200vh;
+    padding: 15vh 2vw 0 2vw;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+}
+.accommodation-title {
+    width: 100%;
+    font-size: 4vw;
+    color: #717171;
+    font-weight: 300;
+}
+.general-info-title {
+    font-size: 3vw;
+    color: #717171;
+    font-weight: 300;
+    padding-top: 4vh;
+}
+.general-info-desc {
+    display: flex;
+    flex-direction: column;
+}
+.general-info-desc-subtitle {
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+.general-info-desc p {
+    padding-top: 0.5vh;
+    padding-bottom: 2.5vh;
+    font-weight: 400;
+}
+
+.reach-doc-link {
+    position: relative;
+    display: inline-block;
+}
+.reach-doc-link-arrow {
+    display: inline-block;
+    transition: transform 0.1s;
+}
+.reach-doc-link:hover .reach-doc-link-arrow {
+    transform: translate(0.26vh, -0.26vh);
+}
+.map-link {
+    position: relative;
+    display: inline-block;
+}
+.map-link-arrow {
+    display: inline-block;
+    transition: transform 0.1s;
+}
+.map-link:hover .map-link-arrow {
+    transform: translate(0.26vh, -0.26vh);
+}
+
+.faq-title {
+    font-size: 3vw;
+    color: #717171;
+    font-weight: 300;
+    padding-top: 4vh;
+}
+
+.faq-accordion-cont {
+    width: 100%;
+    height: auto;
+
+    padding: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    border-top: 0.1vh solid #ffffff;
+    border-bottom: 0.1vh solid #ffffff;
+
+
+}
+
+.faq-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.faq-bottom {
+    overflow: hidden;
+    transition: height 0.1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
