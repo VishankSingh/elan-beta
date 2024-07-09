@@ -11,20 +11,22 @@ function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const containerRef = useRef(null);
   const elanRef = useRef(null);
+  const nvisionRef = useRef(null);
   const [currentTime, setCurrentTime] = useState('');
-  const cursorTextSpanRef = useRef(null);
+  const cursorTextRef = useRef(null);
   const cursorRef = useRef(null);
   const sponsorMarqueeRef = useRef(null);
 
 
   useEffect(() => {
-    cursorTextSpanRef.current = document.getElementById("cursor-text");
+    cursorTextRef.current = document.getElementById("cursor-text");
     cursorRef.current = document.getElementById("cursor");
   }, []);
 
   useEffect(() => {
     function setTime() {
-      const now = new Date();
+      const ISTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+      const now = new Date(ISTime);
       let hours = now.getHours();
       const minutes = now.getMinutes();
       const seconds = now.getSeconds();
@@ -44,12 +46,14 @@ function Home() {
   };
 
   const onMouseEnter = () => {
-    console.log(cursorTextSpanRef.current);
-    if (cursorTextSpanRef.current) {
-      cursorTextSpanRef.current.style.fontSize = '0.04vw';
-      cursorTextSpanRef.current.innerHTML = "Register for workshops &#8599;";
+    if (cursorTextRef.current) {
+      cursorTextRef.current.style.fontSize = '0.04vw';
+      cursorTextRef.current.innerHTML = "Register for workshops &#8599;";
     }
-    cursorRef.current.style.mixBlendMode = "exclusion";
+    if (cursorRef.current) {
+      cursorRef.current.style.mixBlendMode = "exclusion";
+      cursorRef.current.classList.add('rotate');
+    }
     gsap.to(".cursor", {
       scale: 25,
       duration: 0.3,
@@ -62,11 +66,10 @@ function Home() {
       duration: 0.3,
       onComplete: () => {
         cursorRef.current.style.mixBlendMode = "exclusion";
+        cursorTextRef.current.innerHTML = "";
+        cursorRef.current.classList.remove('rotate');
       }
     });
-    if (cursorTextSpanRef.current) {
-      cursorTextSpanRef.current.innerHTML = "";
-    }
   };
 
   useGSAP(() => {
@@ -88,21 +91,18 @@ function Home() {
   }, []);
 
   useGSAP(() => {
-    if (window.innerWidth > 992) {
-      gsap.to(elanRef.current, {
-        left: "6vw",
-        duration: 4,
-        scrollTrigger: {
-          trigger: elanRef.current,
-          scroller: "body",
-          markers: false,
-          start: "top 50%",
-          end: "bottom -20%",
-          scrub: true,
-        },
-      });
-    }
-
+    gsap.to(elanRef.current, {
+      left: "6vw",
+      duration: 4,
+      scrollTrigger: {
+        trigger: elanRef.current,
+        scroller: "body",
+        markers: false,
+        start: "top 48%",
+        end: "bottom -20%",
+        scrub: true,
+      },
+    });
   }, []);
 
   /*
@@ -133,7 +133,7 @@ function Home() {
 
   return (
     <>
-      <VerticalMarquee textColor={"#000000"} bgColor={"#ffffff"}/>
+      <VerticalMarquee/>
       <div className="home-bg"></div>
       <div className="container" ref={containerRef}>
 
@@ -141,7 +141,7 @@ function Home() {
           <div className="hero" onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter}>
             <div className="hero-text">
               <span ref={elanRef} className="elan-text">Elan &<br/></span>
-              <span>nVision</span>
+              <span ref={nvisionRef}><span className="eta">&eta;</span>Vision</span>
             </div>
             <div className="hero-sub-text">
               <div className="mobile-hide">{currentTime}</div>
@@ -153,17 +153,26 @@ function Home() {
           <div className="hero desktop-hide" onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter}>
             <div className="hero-text">
               <span className="elan-text">Elan &<br/></span>
-              <span>nVision</span>
+              <span><span className="eta">&eta;</span>Vision</span>
             </div>
             <div className="hero-sub-text">
               <div className="mobile-hide">{currentTime}</div>
               <div>IIT HYDERABAD</div>
             </div>
+            <div className="about-mobile">
+              <p className="about-mobile-text">
+                Elan & nVision is the annual techno-cultural fest of IIT Hyderabad. It is a celebration of
+                the stories, the melodies, and the memories that bring us together, as well as the
+                technology and innovation that propels us forward. Elan & nVision offers to all those
+                who attend, the exciting opportunity to witness some of the best aspects of student life,
+                including, but not limited to, enthralling competitions, exhilarating performances and
+                electrifying concerts, all jam-packed into three days.
+              </p>
+            </div>
           </div>
 
-        <div className="about">
+        <div className="about mobile-hide">
           <div className="about-text" id="about-text">
-            <div className="about-title desktop-hide">About <br/>Elan & nVision</div>
             <p className="about-text-para">
               Elan & nVision is the annual techno-cultural fest of IIT Hyderabad. It is a celebration of
               the stories, the melodies, and the memories that bring us together, as well as the
@@ -180,34 +189,39 @@ function Home() {
               add gallery title for mobile (and desktop?)
         */}
         <div className="gallery-cont">
+          <div className="gallery-title">Gallery</div>
           <div className="gallery">
-            <div className="item gallery-1"></div>
-            <div className="item gallery-2"></div>
-            <div className="item gallery-3"></div>
-            <div className="item gallery-4"></div>
-            <div className="item gallery-5"></div>
-            <div className="item gallery-6"></div>
-            <div className="item gallery-7"></div>
-            <div className="item gallery-8"></div>
-            <div className="item gallery-9"></div>
-            <div className="item gallery-10"></div>
-            <div className="item gallery-11"></div>
-            <div className="item gallery-12"></div>
-            <div className="item gallery-13"></div>
-            <div className="item gallery-14"></div>
-            <div className="item gallery-15"></div>
-            <div className="item gallery-16"></div>
-            <div className="item gallery-17"></div>
-            <div className="item gallery-18"></div>
-            <div className="item gallery-19"></div>
-            <div className="item gallery-20"></div>
+            <div className="gallery-item gallery-1"></div>
+            <div className="gallery-item gallery-2"></div>
+            <div className="gallery-item gallery-3"></div>
+            <div className="gallery-item gallery-4"></div>
+            <div className="gallery-item gallery-5"></div>
+            <div className="gallery-item gallery-6"></div>
+            <div className="gallery-item gallery-7"></div>
+            <div className="gallery-item gallery-8"></div>
+            <div className="gallery-item gallery-9"></div>
+            <div className="gallery-item gallery-10"></div>
+            <div className="gallery-item gallery-11"></div>
+            <div className="gallery-item gallery-12"></div>
+            <div className="gallery-item gallery-13"></div>
+            <div className="gallery-item gallery-14"></div>
+            <div className="gallery-item gallery-15"></div>
+            <div className="gallery-item gallery-16"></div>
+            <div className="gallery-item gallery-17"></div>
+            <div className="gallery-item gallery-18"></div>
+            <div className="gallery-item gallery-19"></div>
+            <div className="gallery-item gallery-20"></div>
+            <div className="gallery-item gallery-21"></div>
+            <div className="gallery-item gallery-22"></div>
+            <div className="gallery-item gallery-23"></div>
+            <div className="gallery-item gallery-24"></div>
           </div>
         </div>
       </div>
 
       <div className="sponsors-cont">
         <div className="sponsor-title">
-          Those who helped made this possible ? idk
+          Our partners
         </div>
 
         <div className="marquee">

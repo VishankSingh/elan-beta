@@ -1,23 +1,21 @@
 .nav-cont {
-    font-family: "Hanken Grotesk", sans-serif;
     color: white;
 }
 
-
 .nav-top {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 2vh 2vw;
     position: fixed;
     width: 92vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 40;
-    padding: 2vh 2vw;
-    height: 10vh;
 }
 
 .logo {
-    height: 5.8vh;
-    width: 5.8vh;
+    aspect-ratio: 757 / 460;
+    height: 8.8vh;
 }
 
 .logo img {
@@ -26,81 +24,75 @@
 }
 
 .nav-links {
-    display: flex;
-    gap: 7vw;
     align-items: center;
-
+    display: flex;
+    font-family: "Hanken Grotesk", sans-serif;
+    gap: 7vw;
 }
 
 .nav-links__span {
-    font-weight: 400;
     font-size: 0.9vw;
-}
-
-.menu-open {
+    font-weight: 400;
 }
 
 .nav-menu {
+    background-color: #000000;
+    height: 100%;
+    opacity: 0;
     position: fixed;
     width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0;
     z-index: -1;
 }
 
 .menu-close {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.9vw;
+    height: 10vh;
+    opacity: 0;
     position: fixed;
     right: 10vw;
-    opacity: 0;
-    color: white;
-    mix-blend-mode: exclusion;
-    font-size: 0.9vw;
-    display: flex;
-    align-items: center;
-    height: 10vh;
 }
 
 .menu {
+    align-items: start;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    font-weight: 700;
 }
 
 .menu-link {
-    position: relative;
-    font-family: "Hanken Grotesk", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3vw;
-    font-weight: 300;
+    font-weight: 400;
     height: 8vh;
     overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .menu-link-inner {
     color: #ffffff;
 }
 
-
-
 @media screen and (max-width: 992px) {
     .nav-top {
-        width: 100vw;
-        padding: 1vh 5vw;
         font-weight: 300;
+        padding: 1vh 5vw 1vh 5vw;
+        width: 100vw;
     }
 
     .menu-close {
-        right: 5vw;
         font-size: 2vh;
         height: 10vh;
+        right: 5vw;
     }
 
-
-
-
     .logo {
-        height: 5.8vh;
-        width: 5.8vh;
+        aspect-ratio: 757 / 460;
+        height: 7.8vh;
     }
 
     .logo img {
@@ -108,42 +100,35 @@
         width: 100%;
     }
 
-
     .nav-links__span {
-        font-weight: 400;
         font-size: 2vh;
-    }
-
-    .menu-open {
+        font-weight: 400;
     }
 
     .nav-menu {
+        background-color: #000000;
+        height: 100%;
+        opacity: 0;
         position: fixed;
         width: 100%;
-        height: 100%;
-        background-color: #000000;
-        opacity: 0;
         z-index: -1;
     }
 
-
     .menu {
+        align-items: start;
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
 
     .menu-link {
-        position: relative;
-        font-family: "Hanken Grotesk", sans-serif;
         font-size: 3vw;
         font-weight: 300;
         height: 8vh;
         overflow: hidden;
+        position: relative;
     }
 
     .menu-link-inner {
         color: #ffffff;
     }
-
 }

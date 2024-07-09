@@ -16,17 +16,28 @@
 }
 
 .cursor-text {
+    height: 100%;
+    width: 100%;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     mix-blend-mode: exclusion;
     display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: normal;
+}
+
+.cursor img {
+    height: 50%;
+    width: 50%;
+    color: black;
 }
 
 
 
 @media screen and (max-width: 800px) {
     .cursor {
+        display: none;
     }
 }

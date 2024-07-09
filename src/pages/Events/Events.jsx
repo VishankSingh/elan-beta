@@ -6,56 +6,77 @@ import gsap from "gsap";
 
 function Events() {
   const [eventNo, setEventNo] = useState(0);
+  const [slider, setSlider] = useState(true);
 
   const tl = gsap.timeline()
 
   function handleNextEvent() {
-    if (eventNo === 2) return
-    setEventNo(eventNo + 1)
+    const prev = document.getElementById('prev')
+    const next = document.getElementById('next')
 
+    if (slider === false) return
+
+    if (eventNo === 0) {
+      prev.innerHTML = '&#9664; Pronites'
+      next.innerHTML = 'Informals &#9654;'
+      setEventNo(1)
+    } else if (eventNo === 1) {
+      prev.innerHTML = '&#9664; Workshops'
+      next.innerHTML = 'Pronites &#9654;'
+      setEventNo(2)
+    } else if (eventNo === 2) {
+      prev.innerHTML = '&#9664; Informals'
+      next.innerHTML = 'Workshops &#9654;'
+      setEventNo(0)
+    }
+    setSlider(false)
   }
 
   function handlePrevEvent() {
-    if (eventNo === 0) return
-    setEventNo(eventNo - 1)
-
-
+    const prev = document.getElementById('prev')
+    const next = document.getElementById('next')
+    if (slider === false) return
+    if (eventNo === 0) {
+      prev.innerHTML = '&#9664; Workshops'
+      next.innerHTML = 'Pronites &#9654;'
+      setEventNo(2)
+    } else if (eventNo === 1) {
+      prev.innerHTML = '&#9664; Informals'
+      next.innerHTML = 'Workshops &#9654;'
+      setEventNo(0)
+    } else if (eventNo === 2) {
+      prev.innerHTML = '&#9664; Pronites'
+      next.innerHTML = 'Informals &#9654;'
+      setEventNo(1)
+    }
+    setSlider(false)
   }
 
   useGSAP(() => {
-    console.log(eventNo)
-    tl.to('.event-title-inner', {
+    tl.to('.events-inner', {
       transform: `translateX(-${eventNo * 100}%)`,
       ease: "power3.inOut",
       duration: 0.4,
-    }, )
-    tl.to('.event-description-inner', {
-      transform: `translateX(-${eventNo * 100}%)`,
-      ease: "power3.inOut",
-      duration: 0.4,
-    }, '<')
-    tl.to('.counter-inner', {
-      transform: `translateY(-${eventNo * 100}%)`,
-      ease: "power3.inOut",
-      duration: 0.4,
-    }, '<')
-    tl.to('.img-cont', {
-      transform: `translateX(-${eventNo * 100}%)`,
-      ease: "power3.inOut",
-      duration: 0.4,
-    }, '<')
-
+      onComplete: () => setSlider(true),
+    })
   }, [eventNo]);
 
 
 
   return (
     <>
-      <VerticalMarquee textColor={"#000000"} bgColor={"#ffffff"}/>
+      <VerticalMarquee/>
+
+      <div className="control desktop-hide">
+        <div className="prev" id="prev" onClick={handlePrevEvent}>&#9664; Informals</div>
+
+        <div className="next" id="next" onClick={handleNextEvent}>Workshops &#9654;</div>
+      </div>
+
       <div className="events">
-        <div className="events-inner events-pronites">
+        <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number">01.</span>
+            <span className="event-number mobile-hide">01.</span>
             <div className="events-title">Pronites</div>
             <div className="events-about">
               Pronites are the highlight event of our fest, spanning three captivating evenings
@@ -71,7 +92,7 @@ function Events() {
           </div>
           <div className="image-cont">
             <div className="img">
-              <img src="src/assets/events_images/pronites3.jpg" alt="" width="100%" height="100%" />
+              <img src="src/assets/events_images/pronites3.jpg" alt="" width="100%" height="100%"/>
             </div>
             <div className="img">
               <img src="src/assets/events_images/pronites2.png" alt="" width="100%" height="100%"/>
@@ -81,9 +102,9 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="events-inner events-informals">
+        <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number">02.</span>
+            <span className="event-number mobile-hide">02.</span>
             <div className="events-title">Workshops</div>
             <div className="events-about">
               Along with the joy and fun part of our fest their must be some learning cornerstone
@@ -96,7 +117,7 @@ function Events() {
           </div>
           <div className="image-cont">
             <div className="img">
-              <img src="src/assets/events_images/workshop1.jpg" alt="" width="100%" height="100%"/>
+              <img src="src/assets/events_images/workshop1.png" alt="" width="100%" height="100%"/>
             </div>
             <div className="img">
               <img src="src/assets/events_images/workshop2.jpg" alt="" width="100%" height="100%"/>
@@ -106,9 +127,9 @@ function Events() {
             </div>
           </div>
         </div>
-        <div className="events-inner events-workshops">
+        <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number">03.</span>
+            <span className="event-number mobile-hide">03.</span>
             <div className="events-title">Informals</div>
             <div className="events-about">
               Informals are the place where fun begins. We curate an extensive variety of games like
