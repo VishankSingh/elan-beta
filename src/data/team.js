@@ -337,7 +337,7 @@ export const multimedia_team = [
   },
   {
     name: 'Ramuni Lalith Vishnu',
-    image: image_path + ''
+    image: image_path + 'Ramuni Lalith Vishnu_Operations - Ramuni Lalith Vishnu.jpg'
   },
   {
     name: 'Pritam',
@@ -424,7 +424,7 @@ export const publicity_team = [
   },
   {
     name: 'Abhinav Karan A Pillai',
-    image: image_path + ''
+    image: image_path + 'IMG-20240619-WA0003 - Abhinav Karan A Pillai.jpg'
   }
 ];
 

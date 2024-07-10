@@ -2,12 +2,14 @@ import './NavBar.css';
 import {gsap} from 'gsap';
 import {useRef, useState} from 'react';
 import {useGSAP} from '@gsap/react';
+import {useLocation} from 'react-router-dom';
 
 function NavBar() {
   const navMenuRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const logo = 'src/assets/logo/white horizontal no bg cropped left.png';
   const tl = gsap.timeline();
+  const location = useLocation();
 
   function onHoverIn(color) {
     gsap.to(navMenuRef.current, {
@@ -66,66 +68,91 @@ function NavBar() {
 
         <div className='nav-links'>
           <div className='mobile-hide'>
-            <a href='/events'>
-              <span className='nav-links__span'>EVENTS</span></a>
+            <a href='/events'>EVENTS</a>
           </div>
           <div className='mobile-hide'>
-            <a href='/competitions'>
-              <span className='nav-links__span'>COMPETITIONS</span></a>
+            <a href='/competitions'>COMPETITIONS</a>
           </div>
           <div className='mobile-hide'>
-            <a href='/workshops'>
-              <span className='nav-links__span'>WORKSHOPS</span></a>
+            <a href='/workshops'>WORKSHOPS</a>
           </div>
           <div className='mobile-hide'>
-            <a href='#footer'>
-              <span className='nav-links__span'>CONTACT US</span></a>
+            <a href='#footer'>CONTACT US</a>
           </div>
           <div className='menu-open' onClick={toggleMenu}>
-            <span className='nav-links__span'>MENU</span>
+            MENU
           </div>
         </div>
       </div>
 
       <div className='nav-menu' ref={navMenuRef}>
-        <div className='menu-close' onClick={toggleMenu}>
-          <span className=''>CLOSE</span>
+        <div className='menu-close'>
+          <span className='' onClick={toggleMenu}>CLOSE</span>
         </div>
         <div className='menu'>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ff5959')}}
+          <div className={'menu-link' + (location.pathname === '/' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#190000');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/'>Home</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffb900')}}
+          <div className={'menu-link' + (location.pathname === '/events' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#130e00');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/events'>Events</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffffff')}}
+          <div className={'menu-link' + (location.pathname === '/competitions' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#131300');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/competitions'>Competitions</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffffff')}}
+          <div className={'menu-link' + (location.pathname === '/workshops' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#001300');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/workshops'>Workshops</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffffff')}}
+          <div className={'menu-link' + (location.pathname === '/socialcause' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#001917');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/socialcause'>Social Cause</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffffff')}}
+          <div className={'menu-link' + (location.pathname === '/accommodation' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#000f2e');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/accommodation'>Accommodation</a>
           </div>
-          <div className='menu-link'
-               onMouseEnter={() => {onHoverIn('#ffffff')}}
+          <div className={'menu-link' + (location.pathname === '/team' ? ' active-menu-link' : '')}
+               onMouseEnter={() => {
+                 onHoverIn('#20002b');
+               }}
                onMouseLeave={onHoverOut}>
             <a href='/team'>Team</a>
+          </div>
+        </div>
+        <div className='social-links'>
+          <div>
+            <a href='mailto:elan@iith.ac.in' rel='noopener noreferrer' className='mail-link'>elan@iith.ac.in</a>
+          </div>
+          <div className='social-social-media-links'>
+            <a className='link-red' href='https://www.instagram.com/elan_nvision.iith' rel='noopener noreferrer'
+               target='_blank'>Instagram</a><span className='mobile-hide'>&nbsp;/&nbsp;</span>
+            <a className='link-green' href='https://x.com/elan_nvision' rel='noopener noreferrer'
+               target='_blank'>Twitter</a><span className='mobile-hide'>&nbsp;/&nbsp;</span>
+            <a className='link-yellow' href='https://www.facebook.com/elannvision.iithyderabad/'
+               rel='noopener noreferrer' target='_blank'>Facebook</a><span className='mobile-hide'>&nbsp;/&nbsp;</span>
+            <a className='link-orange' href='https://www.linkedin.com/company/elan-nvision-iith/'
+               rel='noopener noreferrer' target='_blank'>Linkedin</a>
           </div>
         </div>
       </div>

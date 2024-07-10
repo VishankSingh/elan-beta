@@ -76,7 +76,6 @@ function Events() {
       <div className="events">
         <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number mobile-hide">01.</span>
             <div className="events-title">Pronites</div>
             <div className="events-about">
               Pronites are the highlight event of our fest, spanning three captivating evenings
@@ -104,7 +103,6 @@ function Events() {
         </div>
         <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number mobile-hide">02.</span>
             <div className="events-title">Workshops</div>
             <div className="events-about">
               Along with the joy and fun part of our fest their must be some learning cornerstone
@@ -129,7 +127,6 @@ function Events() {
         </div>
         <div className="events-inner">
           <div className="events-desc">
-            <span className="event-number mobile-hide">03.</span>
             <div className="events-title">Informals</div>
             <div className="events-about">
               Informals are the place where fun begins. We curate an extensive variety of games like

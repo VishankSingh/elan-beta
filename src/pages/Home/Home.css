@@ -67,7 +67,6 @@
 }
 
 .about-text {
-    font-family: "Poppins", sans-serif;
     font-size: 1.5vw;
     font-weight: 300;
     height: 100%;
@@ -78,20 +77,19 @@
 }
 
 .gallery {
+    background-color: #000000;
     border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid;
     display: grid;
     gap: 0.4vh;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(7, 1fr);
     height: 84vw;
-    padding: 0 0 10vw 0;
+    padding: 0 0 6vw 0;
     position: relative;
     width: 88vw;
-    background-color: #000000;
 }
 
 .gallery-title {
-    font-family: "Hanken Grotesk", sans-serif;
     font-size: 6vw;
     font-weight: 300;
     padding: 6vh 0;
@@ -242,7 +240,6 @@
 }
 
 .sponsor-title {
-    font-family: "Hanken Grotesk", sans-serif;
     font-size: 6vw;
     font-weight: 300;
     left: 2vw;
@@ -261,18 +258,15 @@
     padding: 2vw 0.5vw;
 }
 
-
 .sponsors-box {
     align-items: center;
-    background-color: #000000; /*dadada*/
+    background-color: #000000;
     border: 1px solid #676767;
     display: flex;
-    font-family: "Poppins", sans-serif;
     height: 30vh;
     justify-content: center;
     width: 30vh;
 }
-
 
 .sponsors-box img {
     height: 100%;
@@ -321,19 +315,19 @@
     }
 
     .about-mobile {
-        font-family: "Poppins", sans-serif;
         font-size: 2vh;
         position: relative;
-        top: 40vh;
+        top: 30vh;
     }
 
     .gallery {
+        background-color: black;
         gap: 0.6vh;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(12, 1fr);
         height: 200vh;
-        width: 100%;
         padding: 0 5vw 10vw 5vw;
+        width: 100%;
     }
 
     .gallery-item {
@@ -342,6 +336,7 @@
     }
 
     .gallery-title {
+        background-color: black;
         padding: 3vh 5vw;
         width: 100%;
     }

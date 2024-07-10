@@ -2,19 +2,13 @@ import './Competitions.css';
 import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
 import {tech_competitions} from '../../data/competition_tech.js';
 import {gsap} from 'gsap';
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef} from 'react';
 import {cultural_competitions} from '../../data/competition_cultural.js';
 
 
 function Competitions() {
-  const cursorTextDiv = document.getElementById('cursor-text');
-  const cursorDiv = document.getElementById('cursor');
-
   const imgPlaceholderRef = useRef(null);
   const compImgRef = useRef(null);
-
-  const [compTabState, setCompTabState] = useState('culti');
-
   const cultiTab = document.getElementById('culti-tab');
   const techyTab = document.getElementById('techy-tab');
   const cultiCont = document.getElementById('culti-cont');
@@ -25,7 +19,6 @@ function Competitions() {
     techyTab.classList.remove('selected-tab');
     techyCont.style.display = 'none';
     cultiCont.style.display = 'block';
-
   }
 
   function handleTechyTab() {
@@ -33,20 +26,15 @@ function Competitions() {
     techyTab.classList.add('selected-tab');
     cultiCont.style.display = 'none';
     techyCont.style.display = 'block';
-
   }
 
   function onLeave() {
     imgPlaceholderRef.current.style.opacity = 0;
-    setTimeout(() => {
-      imgPlaceholderRef.current.style.display = 'none';
-    }, 200);
 
   }
 
   function onCardEnter(image) {
     compImgRef.current.src = image;
-    imgPlaceholderRef.current.style.display = 'block';
     imgPlaceholderRef.current.style.opacity = 1;
   }
 
@@ -69,7 +57,6 @@ function Competitions() {
 
   function onDescImgHover(image) {
     compImgRef.current.src = image;
-    imgPlaceholderRef.current.style.display = 'block';
     imgPlaceholderRef.current.style.opacity = 1;
   }
 
