@@ -1,7 +1,6 @@
 import './Home.css';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
 import {gsap} from 'gsap';
-
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
 import {useGSAP} from '@gsap/react';
 import {useEffect, useRef, useState} from 'react';
 import {ScrollTrigger} from 'gsap/all';
@@ -98,30 +97,6 @@ function Home() {
       }
     });
   }, []);
-
-  /*
-    useEffect(() => {
-      const splitText = new SplitType(".about-text-para", {
-        type: 'lines',
-      })
-      console.log(splitText)
-      gsap.from(".line", {
-        transform: "translateY(70%)",
-        opacity: 0,
-        scrollTrigger: {
-          trigger: ".about-text-para",
-          markers: true,
-          start: "top 50%",
-          end: "bottom -20%",
-          scrub: true,
-        }
-      })
-      return () => {
-        splitText.revert()
-      }
-    }, []);
-  */
-
 
   return (
     <>

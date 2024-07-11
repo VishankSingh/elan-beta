@@ -1,9 +1,15 @@
 import './Competitions.css';
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
-import {tech_competitions} from '../../data/competition_tech.js';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
 import {gsap} from 'gsap';
 import {useEffect, useRef} from 'react';
-import {cultural_competitions} from '../../data/competition_cultural.js';
+import {cultural_competitions} from '/src/data/competition_cultural.js';
+import {tech_competitions} from '/src/data/competition_tech.js';
+import culti1 from '/src/assets/comp_desc_imgs/culti1.jpg';
+import culti2 from '/src/assets/comp_desc_imgs/culti2.jpg';
+import culti3 from '/src/assets/comp_desc_imgs/culti3.jpg';
+import tech1 from '/src/assets/comp_desc_imgs/tech1.jpg';
+import tech2 from '/src/assets/comp_desc_imgs/tech2.jpg';
+import tech3 from '/src/assets/comp_desc_imgs/tech3.jpg';
 
 
 function Competitions() {
@@ -68,51 +74,62 @@ function Competitions() {
         <div className='culti-title'>Culti</div>
         <div className='culti-desc'>
           Welcome to the Culti Competitions,
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/culti1.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/culti1.jpg')}
+            <img src={culti1} alt=''
+                 onMouseEnter={() => onDescImgHover(culti1)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
+
           where diversity and creativity intersect in a series of dynamic events. These competitions showcase
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/culti2.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/culti2.jpg')}
+            <img src={culti2} alt=''
+                 onMouseEnter={() => onDescImgHover(culti2)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
+
           the rich cultural tapestry and diverse talents of our community. Join us
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/culti3.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/culti3.jpg')}
+            <img src={culti3} alt=''
+                 onMouseEnter={() => onDescImgHover(culti3)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
-          as we celebrate heritage, passion, and artistic excellence through
-          engaging competitions highlighting our participants&apos; unique contributions.
+
+          as we celebrate heritage, passion, and artistic excellence through engaging competitions highlighting our
+          participants&apos; unique contributions.
         </div>
         <div className='techy-title'>Techy</div>
         <div className='techy-desc'>
           Prepare to push the boundaries
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/tech1.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/tech1.jpg')}
+            <img src={tech1} alt=''
+                 onMouseEnter={() => onDescImgHover(tech1)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
+
           of your skills and creativity as you dive into a diverse
           array of challenges. From rapid-fire coding battles and cryptographic puzzles to game
           development sprints and drone engineering, these contests will test your
           problem-solving prowess, technical expertise, and ability to think outside the box.<br/>
           Get ready
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/tech2.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/tech2.jpg')}
+            <img src={tech2} alt=''
+                 onMouseEnter={() => onDescImgHover(tech2)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
-          to collaborate, compete, and create as you tackle real-world problems and
-          explore
+
+          to collaborate, compete, and create as you tackle real-world problems and explore
+
           <span className='mobile-hide'>&nbsp;
-            <img src='src/assets/comp_desc_imgs/tech3.jpg' alt=''
-                 onMouseEnter={() => onDescImgHover('src/assets/comp_desc_imgs/tech3.jpg')}
+            <img src={tech3} alt=''
+                 onMouseEnter={() => onDescImgHover(tech3)}
                  onMouseLeave={onLeave}/>
             &nbsp;</span>
+
           the frontiers of technology. Choose your arena and let the innovation begin!
         </div>
 

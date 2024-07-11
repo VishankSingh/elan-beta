@@ -1,5 +1,5 @@
 import './Workshops.css';
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
 
 function Workshops() {
   return (

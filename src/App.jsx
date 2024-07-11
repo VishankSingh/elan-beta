@@ -1,21 +1,17 @@
+import CustomCursor from '/src/components/CustomCursor/CustomCursor.jsx';
+import Footer from '/src/components/Footer/Footer.jsx';
+import NavBar from '/src/components/NavBar/NavBar.jsx';
+import Accommodation from '/src/pages/Accommodation/Accommodation.jsx';
+import Competitions from '/src/pages/Competitions/Competitions.jsx';
+import Events from '/src/pages/Events/Events.jsx';
+import Home from '/src/pages/Home/Home.jsx';
+import SocialCause from '/src/pages/Social Cause/SocialCause.jsx';
+import Team from '/src/pages/Team/Team.jsx';
+import Workshops from '/src/pages/Workshops/Workshops.jsx';
+import {ReactLenis, useLenis} from 'lenis/react';
+import {useEffect} from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
-import {ReactLenis, useLenis} from 'lenis/react';
-
-import CustomCursor from './components/CustomCursor/CustomCursor.jsx';
-import NavBar from './components/NavBar/NavBar.jsx';
-import Footer from './components/Footer/Footer.jsx';
-
-import Home from './pages/Home/Home.jsx';
-import Events from './pages/Events/Events.jsx';
-import Competitions from './pages/Competitions/Competitions.jsx';
-import Workshops from './pages/Workshops/Workshops.jsx';
-import SocialCause from './pages/Social Cause/SocialCause.jsx';
-import Accommodation from './pages/Accommodation/Accommodation.jsx';
-import Team from './pages/Team/Team.jsx';
-
-import {useEffect} from 'react';
-
 
 function App() {
   const lenis = useLenis(({scroll}) => {

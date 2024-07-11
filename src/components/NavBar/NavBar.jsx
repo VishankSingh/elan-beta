@@ -4,10 +4,11 @@ import {useRef, useState} from 'react';
 import {useGSAP} from '@gsap/react';
 import {useLocation} from 'react-router-dom';
 
+import logo from '/src/assets/logo/white_horizontal_no_bg_cropped_left.png';
+
 function NavBar() {
   const navMenuRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const logo = 'src/assets/logo/white horizontal no bg cropped left.png';
   const tl = gsap.timeline();
   const location = useLocation();
 

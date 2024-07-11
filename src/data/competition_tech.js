@@ -1,4 +1,4 @@
-const image_path = 'src/assets/techy_comp/';
+const image_path = '/src/assets/techy_comp/';
 
 export const tech_competitions = [
   {

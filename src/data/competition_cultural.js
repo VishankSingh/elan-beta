@@ -1,4 +1,4 @@
-const image_path = 'src/assets/culti_comp/';
+const image_path = '/src/assets/culti_comp/';
 
 export const cultural_competitions = [
   {

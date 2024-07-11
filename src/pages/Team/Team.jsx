@@ -1,5 +1,5 @@
 import './Team.css';
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
 
 import {
   creatives_team,
@@ -22,7 +22,7 @@ import {
   techy_team,
   web_team,
   workshop_team
-} from '../../data/team.js';
+} from '/src/data/team.js';
 
 
 function Team() {

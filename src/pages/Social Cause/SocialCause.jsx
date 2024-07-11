@@ -1,7 +1,6 @@
 import './SocialCause.css';
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
-
-import SocialCauseImage from '../../assets/social-cause-image.jpg';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
+import SocialCauseImage from '/src/assets/social-cause-image.jpg';
 
 function SocialCause() {
   return (

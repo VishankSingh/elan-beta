@@ -1,4 +1,4 @@
-const image_path = 'src/assets/team_images/';
+const image_path = '/src/assets/team_images/';
 
 export const overall = [
   {
@@ -75,94 +75,6 @@ export const heads = [
     image: image_path + 'Siri_Hospitality & Transport_Domain head.jpg'
   }
 ];
-
-export const workshop_techy_head = [
-  {
-    name: 'Anirudh Sairishnan',
-    position: 'Workshop & techy head',
-    image: image_path + 'Anirudh_Techy&Workshops_Domainhead.jpeg'
-  }
-];
-
-export const prod_pronite_head = [
-  {
-    name: 'Tanmay Vishwasrao',
-    position: 'Production & pronites head',
-    image: image_path + 'Tanmay_Pronites & Production_Domain head.jpg'
-  }
-];
-
-export const sponsorship_head = [
-  {
-    name: 'Aditya Vikram Singh',
-    position: 'Sponsorships head',
-    image: image_path + 'Aditya_Sponsorship_domain head.jpg'
-  },
-  {
-    name: 'Anek Anjireddy',
-    position: 'Sponsorships head',
-    image: image_path + 'Anek_Sponsorship_domain head.jpg'
-  }
-];
-
-export const infra_sec_head = [
-  {
-    name: 'Ch Surya Saketh',
-    position: 'Infrastructure & security head',
-    image: image_path + 'Surya Saketh Chakka_infra_security_domain head.jpeg'
-  }
-];
-
-export const informal_socialcause_head = [
-  {
-    name: 'Yashwanth Balaji Edara',
-    position: 'Indormal & social cause head',
-    image: image_path + 'yaswanthbalaji_Informals and social cause_domain head.jpg'
-  }
-];
-
-export const creative_multi_head = [
-  {
-    name: 'Hargovind P',
-    position: 'Creatives & multimedia head',
-    image: image_path + 'Hari_Creatives & Multimedia_domain headjpg.jpg'
-  },
-  {
-    name: 'Sahil Kushwaha',
-    position: 'Creatives & multimedia head',
-    image: image_path + 'Sahil Kushwaha_Multimedia_Creatives_Head.jpg'
-  }
-];
-
-export const culti_lit_eml_head = [
-  {
-    name: 'Aryan Jain',
-    position: 'Culti, LIT & EML head',
-    image: image_path + 'Aryan_Culti&Biggies_Domain Head.jpg'
-  }
-];
-
-export const pr_publicity_web_head = [
-  {
-    name: 'Ananya S Reddy',
-    position: 'Public relations, publicity & web head',
-    image: image_path + ' Ananya S Reddy_PR_publicity_web_domain head.jpg'
-  },
-  {
-    name: 'Dhruv Sharma',
-    position: 'Public relations, publicity & web head',
-    image: image_path + 'Dhruv_PR_Publicity_Web_domain head.jpg'
-  }
-];
-
-export const hosp_transport_head = [
-  {
-    name: 'Katari Siri Varshini',
-    position: 'Hospitality & transport head',
-    image: image_path + 'Siri_Hospitality & Transport_Domain head.jpg'
-  }
-];
-
 
 export const workshop_team = [
   {

@@ -5,6 +5,7 @@
     position: fixed;
     right: 0;
     width: 8vw;
+    height: 100vh
 }
 
 .marquee {
@@ -16,7 +17,6 @@
 }
 
 .marquee span {
-
     font-size: 4.8vw;
     font-weight: 500;
     line-height: 1.3;

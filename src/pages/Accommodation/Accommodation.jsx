@@ -1,7 +1,6 @@
 import './Accommodation.css';
-import VerticalMarquee from '../../components/VerticalMarquee/VerticalMarquee.jsx';
-
-import {faqs} from '../../data/faqs.js';
+import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx';
+import {faqs} from '/src/data/faqs.js';
 
 function Accommodation() {
   return (
