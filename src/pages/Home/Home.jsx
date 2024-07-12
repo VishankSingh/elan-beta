@@ -47,11 +47,6 @@ function Home() {
     cursorRef.current = document.getElementById('cursor');
     cursorTextRef.current.style.fontSize = '0.04vw';
     cursorTextRef.current.innerHTML = 'Register for workshops &#8599;';
-    cursorRef.current.classList.add('rotate');
-    gsap.to('.cursor', {
-      scale: 25,
-      duration: 0.3
-    });
   }, []);
 
   useEffect(() => {
@@ -137,7 +132,7 @@ function Home() {
       <div className='container' ref={containerRef}>
 
         <a href='/workshops' className='mobile-hide'>
-          <div className='hero' onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter}>
+          <div className='hero' onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter} onMouseOver={onMouseEnter}>
             <div className='hero-text'>
               <span ref={elanRef} className='elan-text'>Elan &<br/></span>
               <span ref={nvisionRef}><span className='eta'>&eta;</span>Vision</span>
@@ -224,7 +219,7 @@ function Home() {
         </div>
 
         <div className='marquee'>
-          <Marquee autoFill speed={150} ref={sponsorMarqueeRef} direction={'right'}>
+          <Marquee autoFill speed={750} ref={sponsorMarqueeRef} direction={'right'}>
             <div className='marquee-inner'>
               <div className='sponsors-box'>
                 <img src={Banna} alt=''/>

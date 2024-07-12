@@ -70,7 +70,7 @@ export const heads = [
   },
   {
     name: 'Aryan Jain',
-    position: 'Culti, LIT & EML head',
+    position: 'Culti & Biggies, LIT and EML head',
     image: aryan
   },
   {
@@ -229,7 +229,7 @@ import pranathi from '/src/assets/team_images/Mangamuri Venkata Pranathi_securit
 
 export const security_team = [
   {
-    name: 'Velvadapu Naga Venkata Ganeshwar',
+    name: 'Ganeshwar Velvadapu',
     image: ganeshwar
   },
   {

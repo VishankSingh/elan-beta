@@ -36,12 +36,13 @@ function Competitions() {
 
   function onLeave() {
     imgPlaceholderRef.current.style.opacity = 0;
-
   }
 
   function onCardEnter(image) {
-    compImgRef.current.src = image;
-    imgPlaceholderRef.current.style.opacity = 1;
+    if (screen.orientation.type === 'landscape-primary') {
+      compImgRef.current.src = image;
+      imgPlaceholderRef.current.style.opacity = 1;
+    }
   }
 
   useEffect(() => {
