@@ -247,7 +247,7 @@
 }
 
 .marquee {
-    position: absolute;
+    position: relative;
     top: 10vh;
 }
 

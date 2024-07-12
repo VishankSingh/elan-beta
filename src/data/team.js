@@ -1,395 +1,493 @@
-const image_path = '/src/assets/team_images/';
-
+import mehul from '/src/assets/team_images/Mehul_OC - Elan & ηVision IIT Hyderabad.jpg';
+import vighnesh from '/src/assets/team_images/Vighnesh_Vice overall coordinator.jpg';
 export const overall = [
   {
     name: 'Mehul Srivastava',
     position: 'Overall coordinator',
-    image: image_path + 'Mehul_OC - Elan & ηVision IIT Hyderabad.jpg'
+    image: mehul
   },
   {
     name: 'Vighnesh Sreepathi',
     position: 'Vice overall coordinator',
-    image: image_path + 'Vighnesh_Vice overall coordinator.jpg'
+    image: vighnesh
   }
 ];
+
+import Anirudh from '/src/assets/team_images/Anirudh_Techy&Workshops_Domainhead.jpeg';
+import tanmay from '/src/assets/team_images/Tanmay_Pronites & Production_Domain head.jpg';
+import aditya from '/src/assets/team_images/Aditya_Sponsorship_domain head.jpg';
+import anek from '/src/assets/team_images/Anek_Sponsorship_domain head.jpg';
+import saketh from '/src/assets/team_images/Surya Saketh Chakka_infra_security_domain head.jpeg';
+import yaswanth from '/src/assets/team_images/yaswanthbalaji_Informals and social cause_domain head.jpg';
+import hari from '/src/assets/team_images/Hari_Creatives & Multimedia_domain headjpg.jpg';
+import sahil from '/src/assets/team_images/Sahil Kushwaha_Multimedia_Creatives_Head.jpg';
+import aryan from '/src/assets/team_images/Aryan_Culti&Biggies_Domain Head.jpg';
+import ananya from '/src/assets/team_images/Ananya S Reddy_PR_publicity_web_domain head.jpg';
+import dhruv from '/src/assets/team_images/Dhruv_PR_Publicity_Web_domain head.jpg';
+import katari from '/src/assets/team_images/Siri_Hospitality & Transport_Domain head.jpg';
+
 
 export const heads = [
   {
     name: 'Anirudh Saikrishnan',
     position: 'Workshop & Techy head',
-    image: image_path + 'Anirudh_Techy&Workshops_Domainhead.jpeg'
+    image: Anirudh
   },
   {
     name: 'Tanmay Vishwasrao',
     position: 'Production & Pronites head',
-    image: image_path + 'Tanmay_Pronites & Production_Domain head.jpg'
+    image: tanmay
   },
   {
     name: 'Aditya Vikram Singh',
     position: 'Sponsorships head',
-    image: image_path + 'Aditya_Sponsorship_domain head.jpg'
+    image: aditya
   },
   {
     name: 'Anek Anjireddy',
     position: 'Sponsorships head',
-    image: image_path + 'Anek_Sponsorship_domain head.jpg'
+    image: anek
   },
   {
     name: 'Ch Surya Saketh',
     position: 'Infrastructure & Security head',
-    image: image_path + 'Surya Saketh Chakka_infra_security_domain head.jpeg'
+    image: saketh
   },
   {
     name: 'Yaswanth Balaji Edara',
     position: 'Indormal & Social Cause head',
-    image: image_path + 'yaswanthbalaji_Informals and social cause_domain head.jpg'
+    image: yaswanth
   },
   {
     name: 'Harigovind P',
     position: 'Creatives & Multimedia head',
-    image: image_path + 'Hari_Creatives & Multimedia_domain headjpg.jpg'
+    image: hari
   },
   {
     name: 'Sahil Kushwaha',
     position: 'Creatives & Multimedia head',
-    image: image_path + 'Sahil Kushwaha_Multimedia_Creatives_Head.jpg'
+    image: sahil
   },
   {
     name: 'Aryan Jain',
     position: 'Culti, LIT & EML head',
-    image: image_path + 'Aryan_Culti&Biggies_Domain Head.jpg'
+    image: aryan
   },
   {
     name: 'Ananya S Reddy',
     position: 'Public relations, Publicity & Web head',
-    image: image_path + ' Ananya S Reddy_PR_publicity_web_domain head.jpg'
+    image: ananya
   },
   {
     name: 'Dhruv Sharma',
     position: 'Public relations, Publicity & Web head',
-    image: image_path + 'Dhruv_PR_Publicity_Web_domain head.jpg'
+    image: dhruv
   },
   {
     name: 'Katari Siri Varshini',
     position: 'Hospitality & Transport head',
-    image: image_path + 'Siri_Hospitality & Transport_Domain head.jpg'
+    image: katari
   }
 ];
+
+import mashetty from '/src/assets/team_images/Soham Mahshetty_Workshop_Cordinator.jpg';
+import Gunturi from '/src/assets/team_images/Sri Ujwal Gunturi_Workshop_Coordinator.jpg';
+import Kasireddy from '/src/assets/team_images/Rishikesh Kasireddy_Workshop_Coordinator.jpeg';
 
 export const workshop_team = [
   {
     name: 'Soham Mashetty',
-    image: image_path + 'Soham Mahshetty_Workshop_Cordinator.jpg'
+    image: mashetty
   },
   {
     name: 'Sri Ujjwal Srinivas Varma Gunturi',
-    image: image_path + 'Sri Ujwal Gunturi_Workshop_Coordinator.jpg'
+    image: Gunturi
   },
   {
     name: 'Rishikesh Kasireddy',
-    image: image_path + 'Rishikesh Kasireddy_Workshop_Coordinator.jpeg'
+    image: Kasireddy
   }
 ];
+
+import ashwath from '/src/assets/team_images/Ashwath_Techy_Coordinator.jpg';
+import kowsith from '/src/assets/team_images/Kowsith Gurubilli_techy_coordinator.jpg';
+import abhijit from '/src/assets/team_images/Abhijit Kashyap_techy_coordinator.jpg';
 
 export const techy_team = [
   {
     name: 'Ashwath Elangovan',
-    image: image_path + 'Ashwath_Techy_Coordinator.jpg'
+    image: ashwath
   },
   {
     name: 'Kowsith Gurubilli',
-    image: image_path + 'Kowsith Gurubilli_techy_coordinator.jpg'
+    image: kowsith
   },
   {
     name: 'Abhijit Kashyap',
-    image: image_path + 'Abhijit Kashyap_techy_coordinator.jpg'
+    image: abhijit
   }
 ];
+
+import kunal from '/src/assets/team_images/Kunal_Production_Coordinator.jpg';
+import banjari from '/src/assets/team_images/Tanmay_production_Coordinator.jpg';
 
 export const production_team = [
   {
     name: 'Kunal Thorawade',
-    image: image_path + 'Kunal_Production_Coordinator.jpg'
+    image: kunal
   },
   {
     name: 'Tanmay Banjari',
-    image: image_path + 'Tanmay_production_Coordinator.jpg'
+    image: banjari
   }
 ];
+
+import ajjarapu from '/src/assets/team_images/Sai Charan Ajjarapu_Pronites_Coordinator.jpg';
+import hiba from '/src/assets/team_images/Hiba_pronites_coordinator.jpg';
 
 export const pronites_team = [
   {
     name: 'Sai Charan Ajjarapu',
-    image: image_path + 'Sai Charan Ajjarapu_Pronites_Coordinator.jpg'
+    image: ajjarapu
   },
   {
     name: 'Hiba Muhammed',
-    image: image_path + 'Hiba_pronites_coordinator.jpg'
+    image: hiba
   }
 ];
+
+import aryanaggarwal from '/src/assets/team_images/Aryan Agarwal_Sponsorship_Coordinator.jpg';
+import adhyant from '/src/assets/team_images/Adhyant_Sponsorship_coordinator.jpg';
+import vishwesh from '/src/assets/team_images/Vishwesh_Sponsorship_Coordinator.jpg';
+import harshavardhan from '/src/assets/team_images/Harsha Vardhan_Sponsorship_coordinator.jpg';
+import girijesh from '/src/assets/team_images/Girijesh Dasari_Sponsorship_Coordinator.jpg';
+import harshil from '/src/assets/team_images/Harshil_Sponsorship_coordinator.jpg';
+import abhinavshyam from '/src/assets/team_images/Abhinav Shyam_Sponsorship_coordinator.jpg';
+import azeem from '/src/assets/team_images/Azeem KImthiaz_Sponsorship_coordinator.jpg';
 
 export const sponsorship_team = [
   {
     name: 'Aryan Agarwal',
-    image: image_path + 'Aryan Agarwal_Sponsorship_Coordinator.jpg'
+    image: aryanaggarwal
   },
   {
     name: 'Adhyant Iyer',
-    image: image_path + 'Adhyant_Sponsorship_coordinator.jpg'
+    image: adhyant
   },
   {
     name: 'Vishwesh Ajitkumar',
-    image: image_path + 'Vishwesh_Sponsorship_Coordinator.jpg'
+    image: vishwesh
   },
   {
     name: 'Harsha Vardhan Pulavarthi',
-    image: image_path + 'Harsha Vardhan_Sponsorship_coordinator.jpg'
+    image: harshavardhan
   },
   {
     name: 'Girijesh Dasari',
-    image: image_path + 'Girijesh Dasari_Sponsorship_Coordinator.jpg'
+    image: girijesh
   },
   {
     name: 'Harshil Goyal',
-    image: image_path + 'Harshil_Sponsorship_coordinator.jpg'
+    image: harshil
   },
   {
     name: 'Abhinav Shyam',
-    image: image_path + 'Abhinav Shyam_Sponsorship_coordinator.jpg'
+    image: abhinavshyam
   },
   {
     name: 'Azeem K Imthiaz',
-    image: image_path + 'Azeem KImthiaz_Sponsorship_coordinator.jpg'
+    image: azeem
   }
 ];
+
+import pushpraj from '/src/assets/team_images/Pushpraj_infra_Coordinatror.jpg';
+import rohit from '/src/assets/team_images/Rohit_infrastructure_Coordinator.jpg';
+import krishna from '/src/assets/team_images/Krishna Teja_infra_coordinator.jpg';
+import vamsi from '/src/assets/team_images/VAMSI_INFRASTRUCTURE_COORDINATOR.jpg';
 
 export const infrastructure_team = [
   {
     name: 'Pushpraj Singh Khichi',
-    image: image_path + 'Pushpraj_infra_Coordinatror.jpg'
+    image: pushpraj
   },
   {
     name: 'Rohit Mina',
-    image: image_path + 'Rohit_infrastructure_Coordinator.jpg'
+    image: rohit
   },
   {
     name: 'Krishna Teja',
-    image: image_path + 'Krishna Teja_infra_coordinator.jpg'
+    image: krishna
   },
   {
     name: 'Vamsi Krishna',
-    image: image_path + 'VAMSI_INFRASTRUCTURE_COORDINATOR.jpg'
+    image: vamsi
   }
 ];
+
+import ganeshwar from '/src/assets/team_images/Ganeswar_Security_Coordinator.jpg';
+import pranathi from '/src/assets/team_images/Mangamuri Venkata Pranathi_security_Coordinator.jpeg';
 
 export const security_team = [
   {
     name: 'Velvadapu Naga Venkata Ganeshwar',
-    image: image_path + 'Ganeswar_Security_Coordinator.jpg'
+    image: ganeshwar
   },
   {
     name: 'Venkata Pranathi M',
-    image: image_path + 'Mangamuri Venkata Pranathi_security_Coordinator.jpeg'
+    image: pranathi
   }
 ];
+
+import aashna from '/src/assets/team_images/Aashna_Informals_coordinator.jpg';
+import vakarthik from '/src/assets/team_images/Yakkala Amarnath Karthik_infor,mals_coordinator.jpg';
+import dhruvgoyal from '/src/assets/team_images/Dhruv Goyal_informals_coordinator.jpg';
 
 export const informals_team = [
   {
     name: 'Aashna Sahu',
-    image: image_path + 'Aashna_Informals_coordinator.jpg'
+    image: aashna
   },
   {
     name: 'V A Karthik',
-    image: image_path + 'Yakkala Amarnath Karthik_infor,mals_coordinator.jpg'
+    image: vakarthik
   },
   {
     name: 'Dhruv Goyal',
-    image: image_path + 'Dhruv Goyal_informals_coordinator.jpg'
+    image: dhruvgoyal
   }
 ];
+
+import siva from '/src/assets/team_images/Sivaneasan_SocialCause_Coordinator.jpg';
 
 export const social_cause_team = [
   {
     name: 'Sivaneasan',
-    image: image_path + 'Sivaneasan_SocialCause_Coordinator.jpg'
+    image: siva
   }
 ];
+
+import mishal from '/src/assets/team_images/Mishal Sharaf_Creatives-Coordinator.JPG';
+import shreevel from '/src/assets/team_images/Shreevel K J_creatives_coordinator.jpg';
+import anjali from '/src/assets/team_images/Anjali Uikey_Creatives_coordinator.jpg';
+import parvathy from '/src/assets/team_images/Parvathy Sujith_Creatives_Coordinator.JPG';
+import vikas from '/src/assets/team_images/Vikas Addakula_Creatives_Coordinator.jpg';
 
 export const creatives_team = [
   {
     name: 'Mishal Sharaf',
-    image: image_path + 'Mishal Sharaf_Creatives-Coordinator.JPG'
+    image: mishal
   },
   {
     name: 'Shreevel KJ',
-    image: image_path + 'Shreevel K J_creatives_coordinator.jpg'
+    image: shreevel
   },
   {
     name: 'Anjali Uikey',
-    image: image_path + 'Anjali Uikey_Creatives_coordinator.jpg'
+    image: anjali
   },
   {
     name: 'Parvathy Sujith',
-    image: image_path + 'Parvathy Sujith_Creatives_Coordinator.JPG'
+    image: parvathy
   },
   {
     name: 'Vika Addakula',
-    image: image_path + 'Vikas Addakula_Creatives_Coordinator.jpg'
+    image: vikas
   }
 ];
+
+import kush from '/src/assets/team_images/Kushagra Upadhyay_Multimedia_Coordinator.jpg';
+import raghav from '/src/assets/team_images/Raghav_Multimedia_Coordinator.jpg';
+import Lalith from '/src/assets/team_images/Ramuni Lalith Vishnu_Operations - Ramuni Lalith Vishnu.jpg';
+import Pritam from '/src/assets/team_images/Pritam Kumar Mandal_multimedia_Coordinator.jpg';
 
 export const multimedia_team = [
   {
     name: 'Kush Upadhyay',
-    image: image_path + ' Kushagra Upadhyay_Multimedia_Coordinator.jpg'
+    image: kush
   },
   {
     name: 'Raghav',
-    image: image_path + 'Raghav_Multimedia_Coordinator.jpg'
+    image: raghav
   },
   {
     name: 'Ramuni Lalith Vishnu',
-    image: image_path + 'Ramuni Lalith Vishnu_Operations - Ramuni Lalith Vishnu.jpg'
+    image: Lalith
   },
   {
     name: 'Pritam',
-    image: image_path + 'Pritam Kumar Mandal_multimedia_Coordinator.jpg'
+    image: Pritam
   }
 ];
+
+import abhinya from '/src/assets/team_images/Gogula Abhignya-Culti&biggies_coordinator.jpg';
+import esha from '/src/assets/team_images/M Esha_culti&biggies_Coordinator.jpg';
+import prajwal from '/src/assets/team_images/prajwal_culti & biggies_Coordinator.JPG';
+import sinduri from '/src/assets/team_images/Sinduri Mekala_culti&biggies_Coordinator.jpg';
 
 export const culti_biggies_team = [
   {
     name: 'Abhignya Gogula',
-    image: image_path + 'Gogula Abhignya-Culti&biggies_coordinator.jpg'
+    image: abhinya
   },
   {
     name: 'M Esha',
-    image: image_path + 'M Esha_culti&biggies_Coordinator.jpg'
+    image: esha
   },
   {
     name: 'Prajwal Bhanse',
-    image: image_path + 'prajwal_culti & biggies_Coordinator.JPG'
+    image: prajwal
   },
   {
     name: 'Sinduri',
-    image: image_path + 'Sinduri Mekala_culti&biggies_Coordinator.jpg'
+    image: sinduri
   }
 ];
+
+import enosh from '/src/assets/team_images/Enosh Andrade_LIT_Coordinator.jpg';
+import eshaan from '/src/assets/team_images/eshaan_lit_Coordinator.png';
 
 export const lit_team = [
   {
     name: 'Enosh Andrade',
-    image: image_path + 'Enosh Andrade_LIT_Coordinator.jpg'
+    image: enosh
   },
   {
     name: 'Eshaan Nair',
-    image: image_path + 'eshaan_lit_Coordinator.png'
+    image: eshaan
   }
 ];
+
+import shubham from '/src/assets/team_images/ShubhamDadhich_EML_Cordinator.png';
 
 export const eml_team = [
   {
     name: 'Shubham Dadhich',
-    image: image_path + 'ShubhamDadhich_EML_Cordinator.png'
+    image: shubham
   }
 ];
+
+import tanvi from '/src/assets/team_images/Tanvi_PR_Coordinator.jpg';
+import saket from '/src/assets/team_images/SaketKashyap_PR_Coordinator.png';
+import rishabh from '/src/assets/team_images/Rishabh Duggal_Public relations_Coordinator.jpeg';
+import ansh from '/src/assets/team_images/Ansh Bhatia_PR_coordinator -.jpg';
 
 export const public_relations_team = [
   {
     name: 'Tanvi Vinod Gandhi',
-    image: image_path + 'Tanvi_PR_Coordinator.jpg'
+    image: tanvi
   },
   {
     name: 'Saket Kashyap',
-    image: image_path + 'SaketKashyap_PR_Coordinator.png'
+    image: saket
   },
   {
     name: 'Rishabh Duggal',
-    image: image_path + 'Rishabh Duggal_Public relations_Coordinator.jpeg'
+    image: rishabh
   },
   {
     name: 'Ansh Bhatia',
-    image: image_path + 'Ansh Bhatia_PR_coordinator -.jpg'
+    image: ansh
   }
 ];
+
+import sailaja from '/src/assets/team_images/Sailaja_Publicity_Coordinator.jpg';
+import gayatri from '/src/assets/team_images/Vadla Gayatri Priya__publicity_coordinator.jpg';
+import Karthikeya from '/src/assets/team_images/Mahenderkar Karthikeya_publicity_coordinator.jpeg';
+import ajay from '/src/assets/team_images/Jatavath Ajay_Publicity_Coordinator.jpg';
+import mahani from '/src/assets/team_images/Mahani_publicity_Coordinator.jpg';
+import abhinavpillai from '/src/assets/team_images/IMG-20240619-WA0003 - Abhinav Karan A Pillai.jpg';
 
 export const publicity_team = [
   {
     name: 'Sura Venkata Sailaja',
-    image: image_path + 'Sailaja_Publicity_Coordinator.jpg'
+    image: sailaja
   },
   {
     name: 'Gayatri Priya',
-    image: image_path + 'Vadla Gayatri Priya__publicity_coordinator.JPG'
+    image: gayatri
   },
   {
     name: 'Karthikeya Mahenderkar',
-    image: image_path + 'Mahenderkar Karthikeya_publicity_coordinator.jpeg'
+    image: Karthikeya
   },
   {
     name: 'Jatavath Ajay',
-    image: image_path + 'Jatavath Ajay_Publicity_Coordinator.jpg'
+    image: ajay
   },
   {
     name: 'Kunche Mahani',
-    image: image_path + 'Mahani_publicity_Coordinator.jpg'
+    image: mahani
   },
   {
     name: 'Abhinav Karan A Pillai',
-    image: image_path + 'IMG-20240619-WA0003 - Abhinav Karan A Pillai.jpg'
+    image: abhinavpillai
   }
 ];
+
+import vishank from '/src/assets/team_images/vishank_web_Cordinator.jpg';
+import akhilesh from '/src/assets/team_images/Sirivelu Akhilesh_Web_Coordinator.jpg';
+import ankush from '/src/assets/team_images/Ankush_Web_coordinator.jpg';
 
 export const web_team = [
   {
     name: 'Vishank Singh',
-    image: image_path + 'vishank_web_Cordinator.jpg'
+    image: vishank
   },
   {
     name: 'Akhilesh',
-    image: image_path + 'Sirivelu Akhilesh_Web_Coordinator.jpg'
+    image: akhilesh
   },
   {
     name: 'Ankush Singh',
-    image: image_path + 'Ankush_Web_coordinator.jpg'
+    image: ankush
   }
 ];
+
+import adityalad from '/src/assets/team_images/Aaditya lad_Hospitality_coordinator.jpg';
+import nistala from '/src/assets/team_images/Akhil Nistala_Hospitality - Nistala Sai Akhil.jpg';
+import chinmai from '/src/assets/team_images/Chinmai_Hospitality_coordinator.jpg';
+import aryangandhi from '/src/assets/team_images/Aryan_Hospitality_coordinator.jpg';
+import midhun from '/src/assets/team_images/SaiMidhun_Hospitality_Cordinator.jpg';
+import shreeja from '/src/assets/team_images/Shreeja_Hospitality_Coordinator.jpg';
 
 export const hospitality_team = [
   {
     name: 'Aditya Lad',
-    image: image_path + 'Aaditya lad_Hospitality_coordinator.jpg'
+    image: adityalad
   },
   {
     name: 'Nistala Sai Akhil',
-    image: image_path + 'Akhil Nistala_Hospitality - Nistala Sai Akhil.jpg'
+    image: nistala
   },
   {
     name: 'Chinmai',
-    image: image_path + 'Chinmai_Hospitality_coordinator.jpg'
+    image: chinmai
   },
   {
     name: 'Aryan Gandhi',
-    image: image_path + 'Aryan_Hospitality_coordinator.jpg'
+    image: aryangandhi
   },
   {
     name: 'Sai Midhun',
-    image: image_path + 'SaiMidhun_Hospitality_Cordinator.jpg'
+    image: midhun
   },
   {
     name: 'Shreeja Bandi',
-    image: image_path + 'Shreeja_Hospitality_Coordinator.jpg'
+    image: shreeja
   }
 ];
+
+import sujan from '/src/assets/team_images/Sujan_transportation_Coordinator.jpg';
+import preetham from '/src/assets/team_images/Preetham Rachamalla_Transport_coordinator.jpg';
 
 export const transport_team = [
   {
     name: 'Sujan Rada',
-    image: image_path + 'Sujan_transportation_Coordinator.jpg'
+    image: sujan
   },
   {
     name: 'Preetham Rachamalla',
-    image: image_path + 'Preetham Rachamalla_Transport_coordinator.jpg'
+    image: preetham
   }
 ];
 

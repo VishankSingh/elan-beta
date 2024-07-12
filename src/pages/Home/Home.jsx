@@ -6,6 +6,32 @@ import {useEffect, useRef, useState} from 'react';
 import {ScrollTrigger} from 'gsap/all';
 import Marquee from 'react-fast-marquee';
 
+import Banna from '/src/assets/sponsors_images/Banna.png'
+import Blend360 from '/src/assets/sponsors_images/Blend360.png'
+import CocaCola from '/src/assets/sponsors_images/Coca Cola.png'
+import EMT from '/src/assets/sponsors_images/EMT.png'
+import ForgeAlumnus from '/src/assets/sponsors_images/Forge Alumnus.png'
+import Gaana from '/src/assets/sponsors_images/Gaana.png'
+import Godrej from '/src/assets/sponsors_images/Godrej.png'
+import Greenko from '/src/assets/sponsors_images/Greenko.png'
+import Hitachi from '/src/assets/sponsors_images/Hitachi.png'
+import HoneyTwigs from '/src/assets/sponsors_images/Honey Twigs.png'
+import IBM from '/src/assets/sponsors_images/IBM.png'
+import IndianOil from '/src/assets/sponsors_images/Indian Oil.png'
+import jio from '/src/assets/sponsors_images/jio.png'
+import KLA from '/src/assets/sponsors_images/KLA.png'
+import KTM from '/src/assets/sponsors_images/KTM.png'
+import LT from '/src/assets/sponsors_images/L&T.png'
+import Maybelline from '/src/assets/sponsors_images/Maybelline.png'
+import Microsoft from '/src/assets/sponsors_images/Microsoft.png'
+import MTV from '/src/assets/sponsors_images/MTV.png'
+import ola from '/src/assets/sponsors_images/ola.png'
+import Realme from '/src/assets/sponsors_images/Realme.png'
+import Safexpress from '/src/assets/sponsors_images/Safexpress.png'
+import Stockedge from '/src/assets/sponsors_images/Stockedge.png'
+import Tinder from '/src/assets/sponsors_images/Tinder.png'
+import Uniball from '/src/assets/sponsors_images/Uniball.png'
+
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const containerRef = useRef(null);
@@ -15,7 +41,6 @@ function Home() {
   const cursorTextRef = useRef(null);
   const cursorRef = useRef(null);
   const sponsorMarqueeRef = useRef(null);
-
 
   useEffect(() => {
     cursorTextRef.current = document.getElementById('cursor-text');
@@ -195,79 +220,79 @@ function Home() {
           <Marquee autoFill speed={150} ref={sponsorMarqueeRef} direction={'right'}>
             <div className='marquee-inner'>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Banna.png' alt=''/>
+                <img src={Banna} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Blend360.png' alt=''/>
+                <img src={Blend360} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Coca%20Cola.png' alt=''/>
+                <img src={CocaCola} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/EMT.png' alt=''/>
+                <img src={EMT} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Forge%20Alumnus.png' alt=''/>
+                <img src={ForgeAlumnus} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Gaana.png' alt=''/>
+                <img src={Gaana} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Godrej.png' alt=''/>
+                <img src={Godrej} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Greenko.png' alt=''/>
+                <img src={Greenko} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Hitachi.png' alt=''/>
+                <img src={Hitachi} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Honey%20Twigs.png' alt=''/>
+                <img src={HoneyTwigs} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/IBM.png' alt=''/>
+                <img src={IBM} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Indian%20Oil.png' alt=''/>
+                <img src={IndianOil} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/jio.png' alt=''/>
+                <img src={jio} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/KLA.png' alt=''/>
+                <img src={KLA} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/KTM.png' alt=''/>
+                <img src={KTM} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/L&T.png' alt=''/>
+                <img src={LT} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Maybelline.png' alt=''/>
+                <img src={Maybelline} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Microsoft.png' alt=''/>
+                <img src={Microsoft} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/MTV.png' alt=''/>
+                <img src={MTV} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/ola.png' alt=''/>
+                <img src={ola} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Realme.png' alt=''/>
+                <img src={Realme} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Safexpress.png' alt=''/>
+                <img src={Safexpress} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Stockedge.png' alt=''/>
+                <img src={Stockedge} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Tinder.png' alt=''/>
+                <img src={Tinder} alt=''/>
               </div>
               <div className='sponsors-box'>
-                <img src='src/assets/sponsors_images/Uniball.png' alt=''/>
+                <img src={Uniball} alt=''/>
               </div>
 
 
