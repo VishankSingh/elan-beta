@@ -45,6 +45,13 @@ function Home() {
   useEffect(() => {
     cursorTextRef.current = document.getElementById('cursor-text');
     cursorRef.current = document.getElementById('cursor');
+    cursorTextRef.current.style.fontSize = '0.04vw';
+    cursorTextRef.current.innerHTML = 'Register for workshops &#8599;';
+    cursorRef.current.classList.add('rotate');
+    gsap.to('.cursor', {
+      scale: 25,
+      duration: 0.3
+    });
   }, []);
 
   useEffect(() => {

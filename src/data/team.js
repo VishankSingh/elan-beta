@@ -266,10 +266,10 @@ export const social_cause_team = [
   }
 ];
 
-import mishal from '/src/assets/team_images/Mishal Sharaf_Creatives-Coordinator.JPG';
+import mishal from '/src/assets/team_images/Mishal Sharaf_Creatives-Coordinator.jpg';
 import shreevel from '/src/assets/team_images/Shreevel K J_creatives_coordinator.jpg';
 import anjali from '/src/assets/team_images/Anjali Uikey_Creatives_coordinator.jpg';
-import parvathy from '/src/assets/team_images/Parvathy Sujith_Creatives_Coordinator.JPG';
+import parvathy from '/src/assets/team_images/Parvathy Sujith_Creatives_Coordinator.jpg';
 import vikas from '/src/assets/team_images/Vikas Addakula_Creatives_Coordinator.jpg';
 
 export const creatives_team = [
@@ -321,7 +321,7 @@ export const multimedia_team = [
 
 import abhinya from '/src/assets/team_images/Gogula Abhignya-Culti&biggies_coordinator.jpg';
 import esha from '/src/assets/team_images/M Esha_culti&biggies_Coordinator.jpg';
-import prajwal from '/src/assets/team_images/prajwal_culti & biggies_Coordinator.JPG';
+import prajwal from '/src/assets/team_images/prajwal_culti & biggies_Coordinator.jpg';
 import sinduri from '/src/assets/team_images/Sinduri Mekala_culti&biggies_Coordinator.jpg';
 
 export const culti_biggies_team = [

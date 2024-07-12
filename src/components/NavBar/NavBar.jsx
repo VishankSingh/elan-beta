@@ -12,20 +12,6 @@ function NavBar() {
   const tl = gsap.timeline();
   const location = useLocation();
 
-  function onHoverIn(color) {
-    gsap.to(navMenuRef.current, {
-      backgroundColor: color,
-      duration: 0.3
-    });
-  }
-
-  function onHoverOut() {
-    gsap.to(navMenuRef.current, {
-      backgroundColor: '#000000',
-      duration: 0.3
-    });
-  }
-
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
@@ -91,53 +77,25 @@ function NavBar() {
           <span className='' onClick={toggleMenu}>CLOSE</span>
         </div>
         <div className='menu'>
-          <div className={'menu-link' + (location.pathname === '/' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#190000');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/' ? ' active-menu-link' : '')}>
             <a href='/'>Home</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/events' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#130e00');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/events' ? ' active-menu-link' : '')}>
             <a href='/events'>Events</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/competitions' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#131300');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/competitions' ? ' active-menu-link' : '')}>
             <a href='/competitions'>Competitions</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/workshops' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#001300');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/workshops' ? ' active-menu-link' : '')}>
             <a href='/workshops'>Workshops</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/socialcause' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#001917');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/socialcause' ? ' active-menu-link' : '')}>
             <a href='/socialcause'>Social Cause</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/accommodation' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#000f2e');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/accommodation' ? ' active-menu-link' : '')}>
             <a href='/accommodation'>Accommodation</a>
           </div>
-          <div className={'menu-link' + (location.pathname === '/team' ? ' active-menu-link' : '')}
-               onMouseEnter={() => {
-                 onHoverIn('#20002b');
-               }}
-               onMouseLeave={onHoverOut}>
+          <div className={'menu-link' + (location.pathname === '/team' ? ' active-menu-link' : '')}>
             <a href='/team'>Team</a>
           </div>
         </div>
