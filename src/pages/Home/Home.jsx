@@ -86,7 +86,7 @@ function Home() {
       scale: 1,
       duration: 0.3,
       onComplete: () => {
-        cursorTextRef.current.innerHTML = 'Register for workshops &#8599;';
+        cursorTextRef.current.innerHTML = '';
         cursorRef.current.classList.remove('rotate');
       }
     });
@@ -131,8 +131,8 @@ function Home() {
       <div className='home-bg'></div>
       <div className='container' ref={containerRef}>
 
-        <a href='/workshops' className='mobile-hide'>
-          <div className='hero' onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter} onMouseOver={onMouseEnter}>
+        <a href='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+          <div className='hero'>
             <div className='hero-text'>
               <span ref={elanRef} className='elan-text'>Elan &<br/></span>
               <span ref={nvisionRef}><span className='eta'>&eta;</span>Vision</span>
@@ -219,7 +219,7 @@ function Home() {
         </div>
 
         <div className='marquee'>
-          <Marquee autoFill speed={750} ref={sponsorMarqueeRef} direction={'right'}>
+          <Marquee autoFill speed={150} ref={sponsorMarqueeRef} direction={'right'}>
             <div className='marquee-inner'>
               <div className='sponsors-box'>
                 <img src={Banna} alt=''/>
