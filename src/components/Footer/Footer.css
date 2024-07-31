@@ -28,6 +28,11 @@
     color: #000000;
     font-size: 4vw;
     width: fit-content;
+    transition: color 0.3s ease;
+}
+
+.mail:hover {
+    color: #d50000;
 }
 
 .middle-footer {
